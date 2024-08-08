@@ -1,0 +1,10 @@
+name: Portfolio Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: macos-latest
+    steps:
+      - name: first-job
+        run: echo "Hello World to GitHub actions"
+      - name: second-job
+        run: echo "Insha ALLAH I will learn this GitHub action from this course"
