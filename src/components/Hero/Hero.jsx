@@ -14,42 +14,59 @@ const Hero = () => {
         initial='hidden'
         whileInView='show'
         viewport={{ once: false, amount: 0.25 }}
-        className={`innerWidth ${css.container}`}>
+        className={`innerWidth ${css.container}`}
+      >
         <div className={css.upperElements}>
-          <motion.span className='primaryText' variants={fadeIn('right', 'tween', 0.2, 1)}>
+          <motion.span
+            className='primaryText'
+            variants={fadeIn('right', 'tween', 0.2, 1)}
+          >
             Hey There,
             <br />
             I'm Haroon Hayat.
           </motion.span>
-          <motion.span className='smallText' variants={fadeIn('left', 'tween', 0.4, 1)}>
-            Software developer and Frontend
+          <motion.span
+            className='smallText'
+            variants={fadeIn('left', 'tween', 0.4, 1)}
+          >
+            Full Stack Engineer, building digital
             <br />
-            Engineer focusing on React, Javascript,
+            products that are scalable, secure
             <br />
-            Web Accessibility, Design Systems,
-            <br />
-            and developing chrome extensions.
+            and ready to launch.
           </motion.span>
         </div>
 
-        <motion.div variants={fadeIn('up', 'tween', 0.3, 1)} className={css.person}>
-          <motion.img variants={slideIn('up', 'tween', 0.5, 1.3)} src='./final.png' alt='reactjs developer photo' />
+        <motion.div
+          variants={fadeIn('up', 'tween', 0.3, 1)}
+          className={css.person}
+        >
+          <motion.img
+            variants={slideIn('up', 'tween', 0.5, 1.3)}
+            src='./final.png'
+            alt='reactjs developer photo'
+          />
         </motion.div>
 
         <div className={css.lowerElements}>
-          <motion.div variants={fadeIn('right', 'tween', 0.3, 1)} className={css.experience}>
-            <div className='primaryText'>1+</div>
+          <motion.div
+            variants={fadeIn('right', 'tween', 0.3, 1)}
+            className={css.experience}
+          >
+            <div className='primaryText'>4+</div>
             <div className='secondaryText'>
               <div>Years</div>
               <div>Experience</div>
-              <div>as a ReactJS Developer</div>
             </div>
           </motion.div>
 
-          <motion.div variants={fadeIn('left', 'tween', 0.5, 1)} className={css.certificate}>
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.5, 1)}
+            className={css.certificate}
+          >
             <img src='./certificate.png' alt='' />
-            <span>CERTIFIED PROFATIONAL</span>
-            <span>UI/UX DESIGNER</span>
+            <span>FULL STACK ENGINEER</span>
+            <span>SOFTWARE DEVELOPER</span>
           </motion.div>
         </div>
       </motion.div>
