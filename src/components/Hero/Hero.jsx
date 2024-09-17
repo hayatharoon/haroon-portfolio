@@ -3,9 +3,6 @@ import { fadeIn, slideIn, staggerContainer } from '../../utils/motion';
 import css from './Hero.module.scss';
 import { motion } from 'framer-motion';
 
-// Software developer and Frontend Engineer focusing on React, Javascript, Web Accessibility, Design
-// Systems, and developing chrome extensions. Skilled in designing, developing, and testing web-based
-// applications incorporating a range of technologies.
 const Hero = () => {
   return (
     <section className={`paddings ${css.wrapper}`}>
@@ -40,6 +37,16 @@ const Hero = () => {
         <motion.div
           variants={fadeIn('up', 'tween', 0.3, 1)}
           className={css.person}
+          style={{
+            backgroundImage: `url('../splash.png')`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '23rem',
+            backgroundPosition: 'bottom',
+            position: 'absolute',
+            bottom: '-2rem',
+            left: '33%',
+            margin: 'auto',
+          }}
         >
           <motion.img
             variants={slideIn('up', 'tween', 0.5, 1.3)}
